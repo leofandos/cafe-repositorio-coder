@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Inter', sans-serif;
+}
+html{
+    font-size: 100%;
+    font-family: monospace;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(78, 52, 32);
+    font-size: 1.5rem;
+    font-weight: bold
+    }
+
+.botones{
+    display: inline-block;
+}
+
+nav a img{
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px black;
+}
+footer div img{
+    border-radius: 20%;
+}
+.centrarFoto{
+    text-align: center;
+    padding: 2%;
+    width: 70%;
+    max-width: 960px;
+    margin: 0 auto
+}
+main div img{
+    border-radius: 15%;
+}
+.fotoduenos{
+    box-shadow: 10px 10px 10px black;
+    width: 35vw;
+    height: 100%;
+    margin: auto;
+}
+.padd{
+    padding: 0.5%;
+}
+.flexCont{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    line-height: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+h1{
+        text-align: center;
+    }
+fieldset{
+        margin: auto;
+        border: 2px solid rgb(3, 3, 1);
+        width: 600px;
+      }
+legend{
+    font-size: xx-large;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    margin: auto;
+    height: auto;
+}
+nav ul{
+    display: flex;
+    gap: 2em;
+    margin: 10px;
+}
+
+.textoCentrado{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.fotoCentrada{
+    margin: auto;
+}
+.sectionFoto{
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+}
+.imgSection{
+    width: 100%;
+    height: auto;
+    }
+main{
+    text-align: center;
+}
+
+.tamano{
+    width: 100%;
+    height: 100%;
+}
+p{
+    color: rgb(77, 42, 17);
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+header{
+    padding: 2%;
+    background-color: #c5873580;
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: #000000 1px 1px;
+}
+
+h1 h2{
+color: #664F14;
+font-size: 3rem;
+}
+.titulos{
+    color: rgb(54, 37, 1);
+    font-size: 20px;
+    font-weight: bold;
+}
+html{
+    background-image: url(../img/granos2.jpg);
+    background-size: 125%;
+    border: #000000;
+}
+
+.list-style{
+    list-style: none;
+}
+
+.interlineado{
+    line-height: 2rem;
+}
+
+.flex-container{
+    background-color: none;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+.alineado{
+      display: flex;
+      align-items: center;
+      text-align: center;
+  }
+
+
+/* GRID */
+
+.grid{
+    width: 99%;
+    display: grid;
+}
+.grid-column{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+/*template por area*/
+.templateArea{
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+}
+/*areas*/
+
+.header{
+    grid-area: header;
+    width: 95vw;
+    padding: 30px;
+}
+.nav{
+    grid-area: nav;
+    width: 95vw;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+.aside{
+    grid-area: aside;
+}
+
+@media (max-width: 768px) {
+    nav ul{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+    .templateArea{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "aside"
+        "main"
+        "footer";
+    }
+  }

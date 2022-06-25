@@ -1,0 +1,163 @@
+@import url(@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap'););
+*{
+    font-family: 'Inter', sans-serif;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    font-size: 100%;
+    font-family: monospace
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(88, 58, 37);
+    font-size: 1.5rem;
+    font-weight: 300
+    }
+nav a img{
+    border-radius: 50%;
+    box-shadow: 5px 8px 12px black;
+}
+.fotoduenos{
+    box-shadow: 5px 8px 12px black;
+}
+h1{
+        text-align: center;
+    }
+fieldset{
+        margin: auto;
+        border: 2px solid rgb(3, 3, 1);
+        width: 600px;
+      }
+legend{
+    font-size: xx-large;
+}
+
+table{
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+}
+nav ul{
+    display: flex;
+    gap: 3em;
+}
+article{
+    font-size: 0.5cm;
+}
+.textoCentrado{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+main div{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.tamano{
+    width: 100%;
+    height: 100%;
+}
+p{
+    color: rgb(77, 42, 17);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.text-center{
+    text-align: center;
+
+}
+header h1{
+    background-color: #c5873580;
+    width: auto;
+    border: 3px solid rgba(163, 115, 60, 0.568);
+    padding: 10px;
+    margin: auto;
+}
+
+h1, h2{
+color: #664F14;
+font-size: 2rem;
+}
+html{
+    background-image: url(../img/granos2.jpg);
+    background-size: 125%;
+    border: #000000;
+}
+
+
+.list-style{
+    list-style: none;
+}
+
+.interlineado{
+    line-height: 2rem;
+}
+
+.flex-container{
+    background-color: none;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .alineado{
+      display: flex;
+      align-items: center;
+      align-items: center;
+      text-align: center;
+
+  }
+  footer div{
+margin-left: 35%;
+}
+*{
+        margin: 0%;
+        padding: 0%;
+    }
+
+/* grid */
+
+.grid{
+    width: 99%;
+    display: grid;
+}
+.grid-column{
+    grid-template-columns: 350px 350px;
+    grid-template-rows: repeat(auto);
+    grid-gap: 5px;
+    justify-content: center;
+}
+/*template por area*/
+.templateArea{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 500px 50px;
+    grid-template-areas: 
+    "nav nav nav"
+    "aside main main"
+    "footer footer footer";
+}
+/*areas*/
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+.aside{
+    grid-area: aside;
+}
