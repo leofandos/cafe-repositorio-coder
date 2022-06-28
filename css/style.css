@@ -43,7 +43,6 @@ nav{
 nav ul{
     display: flex;
     gap: 2em;
-    margin: 10px;
 }
 nav a img{
     border-radius: 50%;
@@ -68,7 +67,7 @@ main div img{
     height: 100%;
     margin: auto;
 }
-padd{
+.padd{
     padding: 0.5%;
 }
 .flexCont{
@@ -194,12 +193,11 @@ font-size: 3rem;
 
 .header{
     grid-area: header;
-    width: 95vw;
-    padding: 30px;
+    width: 100%;
 }
 .nav{
     grid-area: nav;
-    width: 95vw;
+    width: 100%;
 }
 .main{
     grid-area: main;
