@@ -8,15 +8,16 @@
 html{
     font-size: 100%;
     font-family: monospace;
+    background-image: url(../img/granos2.jpg);
+    background-size: 125%;
+    border: #000000;
 }
-
 nav ul li a{
     text-decoration: none;
     color: rgb(78, 52, 32);
     font-size: 1.5rem;
     font-weight: bold
     }
-
 .botones{
     display: inline-block;
 }
@@ -27,12 +28,23 @@ nav ul li a{
     cursor: pointer;
     transition: transform 2s;
 }
-
 .logo:hover{
     transform: rotateY(-360deg);
     transition: transform 3s;
 }
-
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    margin: auto;
+    height: auto;
+}
+nav ul{
+    display: flex;
+    gap: 2em;
+    margin: 10px;
+}
 nav a img{
     border-radius: 50%;
     box-shadow: 10px 10px 10px black;
@@ -56,7 +68,7 @@ main div img{
     height: 100%;
     margin: auto;
 }
-.padd{
+padd{
     padding: 0.5%;
 }
 .flexCont{
@@ -70,6 +82,7 @@ main div img{
 h1{
         text-align: center;
     }
+    
 fieldset{
         margin: auto;
         border: 2px solid rgb(3, 3, 1);
@@ -78,21 +91,6 @@ fieldset{
 legend{
     font-size: xx-large;
 }
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-basis: 100%;
-    margin: auto;
-    height: auto;
-}
-nav ul{
-    display: flex;
-    gap: 2em;
-    margin: 10px;
-}
-
 .textoCentrado{
     text-align: center;
     width: 90%;
@@ -114,7 +112,6 @@ nav ul{
 main{
     text-align: center;
 }
-
 .tamano{
     width: 100%;
     height: 100%;
@@ -126,7 +123,6 @@ p{
     width: 80%;
     margin: auto;
 }
-
 .text-center{
     text-align: center;
 }
@@ -138,7 +134,9 @@ header{
     text-align: center;
     text-shadow: #000000 1px 1px;
 }
-
+footer{
+    background-color: #c5873580;
+}
 h1 h2{
 color: #664F14;
 font-size: 3rem;
@@ -148,20 +146,12 @@ font-size: 3rem;
     font-size: 20px;
     font-weight: bold;
 }
-html{
-    background-image: url(../img/granos2.jpg);
-    background-size: 125%;
-    border: #000000;
-}
-
 .list-style{
     list-style: none;
 }
-
 .interlineado{
     line-height: 2rem;
 }
-
 .flex-container{
     background-color: none;
     width: 100px;
@@ -170,12 +160,12 @@ html{
     line-height: 75px;
     font-size: 30px;
   }
+
 .alineado{
       display: flex;
       align-items: center;
       text-align: center;
   }
-
 
 /* GRID */
 
@@ -237,4 +227,4 @@ html{
         "main"
         "footer";
     }
-  }
+}
