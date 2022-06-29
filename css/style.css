@@ -8,8 +8,6 @@
 html{
     font-size: 100%;
     font-family: monospace;
-    background-image: url(../img/granos2.jpg);
-    background-size: 125%;
     border: #000000;
 }
 nav ul li a{
@@ -37,8 +35,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-basis: 100%;
-    margin: auto;
+    width: auto;
     height: auto;
+    background-image: url(../img/fondoheader.png);
 }
 nav ul{
     display: flex;
@@ -134,7 +133,7 @@ header{
     text-shadow: #000000 1px 1px;
 }
 footer{
-    background-color: #c5873580;
+    padding: 10px;
 }
 h1 h2{
 color: #664F14;
@@ -183,8 +182,6 @@ font-size: 3rem;
     grid-template-rows: auto;
     grid-gap: 20px;
     grid-template-areas: 
-    "header header header"
-    "nav nav nav"
     "aside main main"
     "aside main main"
     "footer footer footer";
@@ -197,7 +194,7 @@ font-size: 3rem;
 }
 .nav{
     grid-area: nav;
-    width: 100%;
+    width: 97%;
 }
 .main{
     grid-area: main;
