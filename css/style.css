@@ -12,7 +12,7 @@ html{
 }
 nav ul li a{
     text-decoration: none;
-    color: rgb(78, 52, 32);
+    color: rgb(5, 3, 2);
     font-size: 1.5rem;
     font-weight: bold
     }
@@ -126,7 +126,7 @@ p{
 }
 header{
     padding: 2%;
-    background-color: #c5873580;
+    background-color: #c085339a;
     margin: auto;
     font-size: 2rem;
     text-align: center;
@@ -164,6 +164,15 @@ font-size: 3rem;
       align-items: center;
       text-align: center;
   }
+
+.accordion-button:not(collapsed){
+    color: inherit;
+    background: #b89869;
+    color: #ffffff;
+}
+.collapsed:hover{
+    background: #dbd79a;
+}
 
 /* GRID */
 
