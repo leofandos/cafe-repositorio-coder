@@ -1,0 +1,126 @@
+//TODO LO COMUN AL PROYECTO
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $mainFont;
+}
+html{
+    font-size: 100%;
+    font-family: monospace;
+    border: #000000;
+}
+.centrarFoto{
+    text-align: center;
+    padding: 2%;
+    width: 70%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.fotoDuenos{
+    box-shadow: 10px 10px 10px black;
+    width: 35vw;
+    height: 100%;
+    margin: auto;
+}
+.padd{
+    padding: 0.5%;
+}
+.flexCont{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    line-height: 5px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+h1{
+    text-align: center;
+}
+h1 h2{
+    color: $titCol;
+    font-size: $textXxl;
+}
+fieldset{
+    margin: auto;
+    border: 2px solid rgb(3, 3, 1);
+    width: 600px;
+}
+legend{
+    font-size: xx-large;
+}
+.textoCentrado{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.fotoCentrada{
+    margin: auto;
+}
+.sectionFoto{
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+}
+.imgSection{
+    width: 100%;
+    height: auto;
+}
+main{
+    text-align: center;
+}
+.tamano{
+    width: 100%;
+    height: 100%;
+}
+p{
+    color: $pColor;
+    font-size: $textLg;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+//HEADER
+header{
+    padding: 2%;
+    background-color: $headerColor;
+    margin: auto;
+    font-size: $textXl;
+    text-align: center;
+    text-shadow: #000000 1px 1px;
+}
+.titulos{
+    color: $titColor;
+    font-size: $muyGrande;
+    font-weight: bold;
+}
+.list-style{
+    list-style: none;
+}
+.interlineado{
+    line-height: 2rem;
+}
+.flex-container{
+    background-color: none;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: $muyGrandelg;
+}
+.alineado{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.accordion-button:not(collapsed){
+    color: inherit;
+    background: $accordion1;
+    color: $white;
+    &:hover{
+        background: $accordion2;
+    }
+}
