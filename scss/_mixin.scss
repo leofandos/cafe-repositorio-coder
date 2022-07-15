@@ -1,0 +1,27 @@
+// MIXIN 
+
+@mixin font ($size,$fontw,$color){
+    font-size: $size;
+    font-weight: $fontw;
+    color: $color;
+}
+
+.titulos{
+    @include font($muyGrande,bold,$titColor)
+}
+p{
+    @include font($textLg, bold, $pColor)
+    width: 80%;
+    margin: auto;
+}
+
+// EXTEND
+
+.width{
+    width: 100%;
+}
+
+.textCenter{
+    text-align: center;
+}
+

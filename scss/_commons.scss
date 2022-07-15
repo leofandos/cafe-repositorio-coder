@@ -9,8 +9,21 @@ html{
     font-family: monospace;
     border: #000000;
 }
+
+// MAPS
+
+$paleta: (
+    'uno': #c085339a,
+    'dos': #b89869,
+    'tres': #dbd79a,
+    'cuatro': #664f14,
+    'cinco': #ffffff,
+);
+
+// FIN MAPS
+
 .centrarFoto{
-    text-align: center;
+    @extend .textCenter;
     padding: 2%;
     width: 70%;
     max-width: 960px;
@@ -34,10 +47,10 @@ html{
     align-items: flex-end;
 }
 h1{
-    text-align: center;
+    @extend .textCenter;
 }
 h1 h2{
-    color: $titCol;
+    color: map-get($map: $paleta, $key: 'cuatro');
     font-size: $textXxl;
 }
 fieldset{
@@ -46,10 +59,10 @@ fieldset{
     width: 600px;
 }
 legend{
-    font-size: xx-large;
+    font-size: xx-large
 }
 .textoCentrado{
-    text-align: center;
+    @extend .textCenter;
     width: 90%;
     margin: auto;
     padding: 20px;
@@ -58,44 +71,32 @@ legend{
     margin: auto;
 }
 .sectionFoto{
-    width: 100%;
+    @extend .width;
     max-width: auto;
     margin: 0 auto;
 }
 .imgSection{
-    width: 100%;
+    @extend .width;
     height: auto;
 }
 main{
-    text-align: center;
+    @extend .textCenter;
 }
 .tamano{
-    width: 100%;
+    @extend .width;
     height: 100%;
 }
-p{
-    color: $pColor;
-    font-size: $textLg;
-    font-weight: bold;
-    width: 80%;
-    margin: auto;
-}
 .text-center{
-    text-align: center;
+    @extend .textCenter;
 }
 //HEADER
 header{
     padding: 2%;
-    background-color: $headerColor;
+    background-color: map-get($map: $paleta, $key: 'uno');
     margin: auto;
     font-size: $textXl;
     text-align: center;
     text-shadow: #000000 1px 1px;
-}
-.titulos{
-    color: $titColor;
-    font-size: $muyGrande;
-    font-weight: bold;
 }
 .list-style{
     list-style: none;
@@ -107,20 +108,21 @@ header{
     background-color: none;
     width: 100px;
     margin: 10px;
-    text-align: center;
+    @extend .textCenter;
     line-height: 75px;
     font-size: $muyGrandelg;
 }
 .alineado{
     display: flex;
     align-items: center;
-    text-align: center;
+    @extend .textCenter;
 }
 .accordion-button:not(collapsed){
     color: inherit;
     background: $accordion1;
     color: $white;
     &:hover{
-        background: $accordion2;
+        background: map-get($map: $paleta, $key: 'tres');
     }
 }
+

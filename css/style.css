@@ -50,7 +50,6 @@ html {
   border: #000000; }
 
 .centrarFoto {
-  text-align: center;
   padding: 2%;
   width: 70%;
   max-width: 960px;
@@ -73,9 +72,6 @@ html {
   justify-content: space-between;
   align-items: flex-end; }
 
-h1 {
-  text-align: center; }
-
 h1 h2 {
   color: #664f14;
   font-size: 3rem; }
@@ -89,7 +85,6 @@ legend {
   font-size: xx-large; }
 
 .textoCentrado {
-  text-align: center;
   width: 90%;
   margin: auto;
   padding: 20px; }
@@ -98,30 +93,14 @@ legend {
   margin: auto; }
 
 .sectionFoto {
-  width: 100%;
   max-width: auto;
   margin: 0 auto; }
 
 .imgSection {
-  width: 100%;
   height: auto; }
 
-main {
-  text-align: center; }
-
 .tamano {
-  width: 100%;
   height: 100%; }
-
-p {
-  color: #4d2a11;
-  font-size: 1.5rem;
-  font-weight: bold;
-  width: 80%;
-  margin: auto; }
-
-.text-center {
-  text-align: center; }
 
 header {
   padding: 2%;
@@ -130,11 +109,6 @@ header {
   font-size: 2rem;
   text-align: center;
   text-shadow: #000000 1px 1px; }
-
-.titulos {
-  color: #362501;
-  font-size: 20px;
-  font-weight: bold; }
 
 .list-style {
   list-style: none; }
@@ -146,14 +120,12 @@ header {
   background-color: none;
   width: 100px;
   margin: 10px;
-  text-align: center;
   line-height: 75px;
   font-size: 30px; }
 
 .alineado {
   display: flex;
-  align-items: center;
-  text-align: center; }
+  align-items: center; }
 
 .accordion-button:not(collapsed) {
   color: inherit;
@@ -161,3 +133,21 @@ header {
   color: #ffffff; }
   .accordion-button:not(collapsed):hover {
     background: #dbd79a; }
+
+.titulos {
+  font-size: 20px;
+  font-weight: bold;
+  color: #362501; }
+
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4d2a11;
+  width: 80%;
+  margin: auto; }
+
+.width, .sectionFoto, .imgSection, .tamano {
+  width: 100%; }
+
+.textCenter, .centrarFoto, h1, .textoCentrado, main, .text-center, .flex-container, .alineado {
+  text-align: center; }
