@@ -11,8 +11,7 @@
 }
 p{
     @include font($textLg, bold, $pColor)
-    width: 80%;
-    margin: auto;
+       
 }
 
 // EXTEND

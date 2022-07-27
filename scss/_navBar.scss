@@ -24,17 +24,6 @@ nav{
             }
         }
     }
-.botones{
-    display: inline-block;
-    &:hover{
-        background: linear-gradient(to right, rgba(255, 218, 95, 0.514), rgba(150, 94, 10, 0.418));
-        border-radius: 35%;
-        transform: scaleX(1.2);
-        cursor: pointer;
-        transition: transform 3s;
-    }
-}
-
 .logo{
     &:hover{
     transform: rotateY(-360deg);

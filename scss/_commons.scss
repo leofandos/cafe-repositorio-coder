@@ -91,12 +91,11 @@ main{
 }
 //HEADER
 header{
-    padding: 2%;
+    margin: 15px;
     background-color: map-get($map: $paleta, $key: 'uno');
     margin: auto;
     font-size: $textXl;
     text-align: center;
-    text-shadow: #000000 1px 1px;
 }
 .list-style{
     list-style: none;

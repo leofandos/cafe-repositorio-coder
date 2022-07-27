@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 nav {
   display: flex;
   justify-content: space-between;
@@ -20,15 +20,6 @@ nav {
       font-size: 1.5rem;
       font-weight: bold; }
 
-.botones {
-  display: inline-block; }
-  .botones:hover {
-    background: linear-gradient(to right, rgba(255, 218, 95, 0.514), rgba(150, 94, 10, 0.418));
-    border-radius: 35%;
-    transform: scaleX(1.2);
-    cursor: pointer;
-    transition: transform 3s; }
-
 .logo:hover {
   transform: rotateY(-360deg);
   transition: transform 3s; }
@@ -42,7 +33,7 @@ footer {
 * {
   padding: 0;
   margin: 0;
-  font-family: "Inter", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 html {
   font-size: 100%;
@@ -103,12 +94,11 @@ legend {
   height: 100%; }
 
 header {
-  padding: 2%;
+  margin: 15px;
   background-color: #c085339a;
   margin: auto;
   font-size: 2rem;
-  text-align: center;
-  text-shadow: #000000 1px 1px; }
+  text-align: center; }
 
 .list-style {
   list-style: none; }
@@ -140,11 +130,9 @@ header {
   color: #362501; }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  color: #4d2a11;
-  width: 80%;
-  margin: auto; }
+  color: #4d2a11; }
 
 .width, .sectionFoto, .imgSection, .tamano {
   width: 100%; }

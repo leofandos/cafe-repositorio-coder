@@ -18,210 +18,197 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body class="padd">
+<body>
     <div> 
-    <header class="header">Un Cafe Para Empezar El Dia</header>
+    <header>UN CAFÉ PARA EMPEZAR EL DÍA</header>
     <!--Empieza la navbar-->
     <nav class="navbar navbar-expand-md navbar-light bg-null padd">
         <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img class="logo" src="../img/logo.jpg" alt="logo de la cafeteria"></a>
+        <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo.jpg" alt="logo de la cafeteria"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li><img src="../img/granodecafe.png" alt="grano de cafe"></li>
-                <li class="nav-item">
-                <a class="botones nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                <a class="botones nav-link active" aria-current="page" href="cafe.html">Cafe</a>
-                </li>
-                <li class="nav-item">
-                <a class="botones nav-link active" aria-current="page" href="quienessomos.html">Quienes Somos</a>
-                </li>
-                <li class="nav-item">
-                <a class="botones nav-link active" aria-current="page" href="productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                <a class="botones nav-link active" aria-current="page" href="contacto.html">Contactos</a>
-            </li>
-            </ul>
-        </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html"><button type="button" class="btn btn-outline-dark fw-bolder fs-5">INICIO</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="cafe.html"><button type="button" class="btn btn-outline-dark fw-bolder fs-5">CAFÉ</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="quienessomos.html"><button type="button" class="btn btn-outline-dark fw-bolder fs-5">QUIENES SOMOS</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="productos.html"><button type="button" class="btn btn-outline-dark fw-bolder fs-5">PRODUCTOS</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contacto.html"><button type="button" class="btn btn-outline-dark fw-bolder fs-5">CONTACTO</button></a>
+          </li>
+          </ul>
+      </div>
         </div>
     </nav>
   <!--Termina la navbar-->
     </div>
     <div class="d-flex align-items-stretch p-5">
-    <aside class="aside">
-        <ul class="list-group mt-4">
-            <li class="list-group-item">CAFE</li>
-            <li class="list-group-item">CAFE C/ LECHE</li>
-            <li class="list-group-item">FUERTE</li>
-            <li class="list-group-item">SUAVE</li>
-            <li class="list-group-item">LIVIANO</li>
-        </ul>
-    </aside>
     <main class="main flexCont">
         <div class="container">
-            <div class="row justify-content-md-center">
+            <div class="row justify-content-center">
+
+
         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 card mt-4" style="width: 15rem;">
             <img src="../img/cafeamericano.jpg" class="card-img-top" alt="Cafe americano">
             <div class="card-body">
-              <h5 class="card-title fs-4 fw-bold">Cafe Americano</h5>
+              <h5 class="card-title fs-4 fw-bold">Café Americano</h5>
             </div>
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                Ver Mas
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><div class="text-capitalize fs-5 lh-sm m-2">El café americano, refiriéndose al café típico que se bebe en los Estados Unidos, es la mezcla de agua caliente y café procesado en una cafetera con filtro de café.</div></li>
-              </ul>
-            </div>
+              <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  QUE ES?
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="exampleModalLabel">Café Americano</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="lh-sm"> El café americano, refiriéndose al café típico que se bebe en los Estados Unidos, es la mezcla de agua caliente y café procesado en una cafetera con filtro de café.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn->" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
         </div>
         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 card mt-4" style="width: 15rem;">
             <img src="../img/cafedoble.jpg" class="card-img-top" alt="Cafe doble">
             <div class="card-body">
-              <h5 class="card-title fs-4 fw-bold">Cafe Doble</h5>
+              <h5 class="card-title fs-4 fw-bold">Café Doble</h5>
             </div>
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                Ver Mas
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><div class="text-capitalize fs-5 lh-sm m-2">El espresso doble, también comúnmente llamado café doble, se hace preparando dos cafés espresso en la taza de cappuccino. No confundir con el espresso largo.</div></li>
-              </ul>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              QUE ES?
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Café Doble</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lh-sm">El espresso doble, también comúnmente llamado café doble, se hace preparando dos cafés espresso en la taza de cappuccino. No confundir con el espresso largo.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn->" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 card mt-4" style="width: 15rem;">
             <img src="../img/cafesimple.jpg" class="card-img-top" alt="Cafe">
             <div class="card-body">
-              <h5 class="card-title fs-4 fw-bold">Cafe</h5>
+              <h5 class="card-title fs-4 fw-bold">Café</h5>
             </div>
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                Ver Mas
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><div class="text-capitalize fs-5 lh-sm m-2">El café es la bebida que se obtiene a partir de los granos tostados y molidos de los frutos de la planta del café; es altamente estimulante por su contenido de cafeína.</div></li>
-              </ul>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              QUE ES?
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Café</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lh-sm">El café es la bebida que se obtiene a partir de los granos tostados y molidos de los frutos de la planta del café; es altamente estimulante por su contenido de cafeína.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn->" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>   
         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 card mt-4" style="width: 15rem;">
             <img src="../img/cafemanchado.jpg" class="card-img-top" alt="Cafe manchado">
             <div class="card-body">
-              <h5 class="card-title fs-4 fw-bold">Cafe Manchado</h5>
+              <h5 class="card-title fs-4 fw-bold">Café Manchado</h5>
             </div>
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                Ver Mas
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><div class="text-capitalize fs-5 lh-sm m-2">El café manchado o macchiato en italiano, también llamado espresso macchiato, es un café cortado de Italia, es un expreso con una pequeña cantidad de leche caliente y espumada.</div></li>
-              </ul>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              QUE ES?
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Café Manchado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lh-sm">El café manchado o macchiato en italiano, también llamado espresso macchiato, es un café cortado de Italia, es un expreso con una pequeña cantidad de leche caliente y espumada.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn->" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>    
         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 card mt-4" style="width: 15rem;">
             <img src="../img/cafedoble.jpg" class="card-img-top" alt="Cafe doble">
             <div class="card-body">
-              <h5 class="card-title fs-4 fw-bold">Cafe Doble</h5>
+              <h5 class="card-title fs-4 fw-bold">Café Doble</h5>
             </div>
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                Ver Mas
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><div class="text-capitalize fs-5 lh-sm m-2">El espresso doble, también comúnmente llamado café doble, se hace preparando dos cafés espresso en la taza de cappuccino. No confundir con el espresso largo.</div></li>
-              </ul>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              QUE ES?
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Café Doble</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lh-sm">El espresso doble, también comúnmente llamado café doble, se hace preparando dos cafés espresso en la taza de cappuccino. No confundir con el espresso largo.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn->" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 card mt-4" style="width: 15rem;">
-          <img src="../img/cafeamericano.jpg" class="card-img-top" alt="Cafe americano">
-          <div class="card-body">
-            <h5 class="card-title fs-4 fw-bold">Cafe Americano</h5>
-          </div>
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              Ver Mas
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><div class="text-capitalize fs-5 lh-sm m-2">El café americano, refiriéndose al café típico que se bebe en los Estados Unidos, es la mezcla de agua caliente y café procesado en una cafetera con filtro de café.</div></li>
-            </ul>
-          </div>
-      </div>
-      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 card mt-4" style="width: 15rem;">
-          <img src="../img/cafedoble.jpg" class="card-img-top" alt="Cafe doble">
-          <div class="card-body">
-            <h5 class="card-title fs-4 fw-bold">Cafe Doble</h5>
-          </div>
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              Ver Mas
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><div class="text-capitalize fs-5 lh-sm m-2">El espresso doble, también comúnmente llamado café doble, se hace preparando dos cafés espresso en la taza de cappuccino. No confundir con el espresso largo.</div></li>
-            </ul>
-          </div>
-      </div>
-      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 card mt-4" style="width: 15rem;">
-          <img src="../img/cafesimple.jpg" class="card-img-top" alt="Cafe">
-          <div class="card-body">
-            <h5 class="card-title fs-4 fw-bold">Cafe</h5>
-          </div>
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              Ver Mas
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><div class="text-capitalize fs-5 lh-sm m-2">El café es la bebida que se obtiene a partir de los granos tostados y molidos de los frutos de la planta del café; es altamente estimulante por su contenido de cafeína.</div></li>
-            </ul>
-          </div>
-      </div>   
-      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 card mt-4" style="width: 15rem;">
-          <img src="../img/cafemanchado.jpg" class="card-img-top" alt="Cafe manchado">
-          <div class="card-body">
-            <h5 class="card-title fs-4 fw-bold">Cafe Manchado</h5>
-          </div>
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              Ver Mas
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><div class="text-capitalize fs-5 lh-sm m-2">El café manchado o macchiato en italiano, también llamado espresso macchiato, es un café cortado de Italia, es un expreso con una pequeña cantidad de leche caliente y espumada.</div></li>
-            </ul>
-          </div>
-      </div>    
-      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 card mt-4" style="width: 15rem;">
-          <img src="../img/cafedoble.jpg" class="card-img-top" alt="Cafe doble">
-          <div class="card-body">
-            <h5 class="card-title fs-4 fw-bold">Cafe Doble</h5>
-          </div>
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              Ver Mas
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><div class="text-capitalize fs-5 lh-sm m-2">El espresso doble, también comúnmente llamado café doble, se hace preparando dos cafés espresso en la taza de cappuccino. No confundir con el espresso largo.</div></li>
-            </ul>
-          </div>
-      </div>
       </div>
       </div>
       <div class="container border-top border-bottom mt-5">
         <div class="row">
-          <div class="col-12 fs-2"><img src="../img/cake.png" alt="algunas de las tortas de la cafeteria" class="me-3 mt-2 mb-2">TAMBIEN HACEMOS TORTAS. HACE TU PEDIDO <a href="https://api.whatsapp.com/send?phone=5491156978756"><img src="../img/arrow.png" alt="indicador para hablar con nosotros">ACA</a></div>
+          <div class="col-12 fs-2 m-3"><img src="../img/cake.png" alt="algunas de las tortas de la cafeteria" class="me-3 mt-2 mb-2">TAMBIEN HACEMOS TORTAS. HACE TU PEDIDO <a href="https://api.whatsapp.com/send?phone=5491156978756"><img src="../img/arrow.png" alt="indicador para hablar con nosotros">ACA</a></div>
         </div>
       </div>
-      <div class="container mt-4 d-flex">
+      <div class="container mt-4">
         <div class="row justify-content-md-center">
           <div class="col-xs-12 col-sm-12 col-md-4 mb-3">
-            <img width="70%" src="../img/torta1.jpg" alt="torta">
+            <img width="80%" src="../img/torta1.jpg" class="rounded-3 border border-5" alt="torta">
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 mb-3">
-            <img width="80%" src="../img/torta2.jpg" alt="torta">
+            <img width="90%" src="../img/torta2.jpg" class="rounded-3 border border-5" alt="torta">
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 mb-3">
-            <img width="70%" src="../img/torta3.jpg" alt="torta">
+            <img width="80%" src="../img/torta3.jpg" class="rounded-3 border border-5" alt="torta">
           </div>
         </div>
       </div>
@@ -242,9 +229,6 @@
             <img src="../img/whatsapp.png" alt="logo whatsapp" width="35px" 
             height="35px">
         </a>
-        <a href="productos.html">
-          <button type="button" class="btn btn-lg btn-secondary text-dark ms-3 mt-2" style="background-color: #fff">subir</button>
-      </a>
     </section>
     </div>
         <!-- Grid container -->
